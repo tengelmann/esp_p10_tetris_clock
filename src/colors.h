@@ -1,16 +1,23 @@
-// *********************************************************************
-// Color definitions
-// *********************************************************************
+#ifndef COLORS_H
+    #define COLORS_H
 
-// Some standard colors
-uint16_t myRED = display.color565(255, 0, 0);
-uint16_t myGREEN = display.color565(0, 255, 0);
-uint16_t myBLUE = display.color565(48, 73, 255);
-uint16_t myWHITE = display.color565(255, 255, 255);
-uint16_t myYELLOW = display.color565(255, 255, 0);
-uint16_t myCYAN = display.color565(0, 255, 255);
-uint16_t myMAGENTA = display.color565(255, 0, 255);
-uint16_t myORANGE = display.color565(255, 96, 0);
-uint16_t myBLACK = display.color565(0, 0, 0);
+    #include <inttypes.h>
 
-uint16 myCOLORS[8] = {myRED, myGREEN, myBLUE, myWHITE, myYELLOW, myCYAN, myMAGENTA, myBLACK};
+    // *********************************************************************
+    // Color definitions
+    // *********************************************************************
+
+    // Some standard colors
+    extern uint16_t myRED;
+    extern uint16_t myGREEN; 
+    extern uint16_t myBLUE;
+    extern uint16_t myWHITE;
+    extern uint16_t myYELLOW;
+    extern uint16_t myCYAN;
+    extern uint16_t myMAGENTA;
+    extern uint16_t myORANGE;
+    extern uint16_t myBLACK;
+
+    extern uint16_t myCOLORS[8];
+
+#endif
